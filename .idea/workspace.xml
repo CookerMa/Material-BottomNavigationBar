@@ -10,37 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="649dff15-ba18-42c1-93cd-93bd44e96dff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Material-BottomNavigation.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/androidTest/java/it/sephiroth/android/library/bottomnavigation/BasicTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/it/sephiroth/android/library/bottomnavigation/BasicTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityCustomBadge.java" afterPath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityCustomBadge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityCustomBehavior.java" afterPath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityCustomBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityTablet.java" afterPath="$PROJECT_DIR$/app/src/main/java/it/sephiroth/android/library/bottomnavigation/app/MainActivityTablet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_custom_badge.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_custom_badge.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_custom_behavior.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_custom_behavior.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_tablet.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_tablet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_tablet_collapsing.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_tablet_collapsing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main_tablet.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main_tablet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottombar_menu_5items.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottombar_menu_5items.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/BottomBehavior.java" afterPath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/BottomBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/BottomNavigation.java" afterPath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/BottomNavigation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/BottomNavigationShiftingItemView.java" afterPath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/BottomNavigationShiftingItemView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/MiscUtils.java" afterPath="$PROJECT_DIR$/bottom-navigation/src/main/java/it/sephiroth/android/library/bottomnavigation/MiscUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bottom-navigation/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/bottom-navigation/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bottom-navigation/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/bottom-navigation/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-    </list>
+    <list default="true" id="649dff15-ba18-42c1-93cd-93bd44e96dff" name="Default" comment="" />
     <ignored path="Material-BottomNavigation.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

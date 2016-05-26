@@ -6,14 +6,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
 
 import it.sephiroth.android.library.bottomnavigation.BadgeProvider;
@@ -23,9 +20,9 @@ import it.sephiroth.android.library.bottomnavigation.MiscUtils;
 import static android.util.Log.INFO;
 
 @TargetApi (Build.VERSION_CODES.KITKAT_WATCH)
-public class MainActivity extends BaseActivity implements BottomNavigation.OnMenuItemSelectionListener {
+public class TestBottomNavigationActivity extends BaseActivity implements BottomNavigation.OnMenuItemSelectionListener {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = TestBottomNavigationActivity.class.getSimpleName();
 
     public static final int MENU_TYPE_3_ITEMS = 0;
     public static final int MENU_TYPE_3_ITEMS_NO_BACKGROUND = 1;
@@ -63,33 +60,20 @@ public class MainActivity extends BaseActivity implements BottomNavigation.OnMen
         }
 
         initializeBottomNavigation(savedInstanceState);
-        initializeUI(savedInstanceState);
+
     }
 
-    protected int getActivityLayoutResId() {return R.layout.activity_main;}
+    protected int getActivityLayoutResId() {return R.layout.activity_bottom_navigation_test;}
 
     protected void initializeBottomNavigation(final Bundle savedInstanceState) {
         if (null == savedInstanceState) {
             getBottomNavigation().setDefaultSelectedIndex(0);
             final BadgeProvider provider = getBottomNavigation().getBadgeProvider();
             provider.show(R.id.bbn_item3);
-            provider.show(R.id.bbn_item4);
         }
     }
 
-    protected void initializeUI(final Bundle savedInstanceState) {
-        final FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
-        assert floatingActionButton != null;
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction(
-                    "Action",
-                    null
-                ).show();
-            }
-        });
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -178,8 +162,10 @@ public class MainActivity extends BaseActivity implements BottomNavigation.OnMen
         Log.i(TAG, "onMenuItemReselect(" + itemId + ", " + position + ")");
 
         final FragmentManager manager = getSupportFragmentManager();
-        MainActivityFragment fragment = (MainActivityFragment) manager.findFragmentById(R.id.fragment);
+        TestBottomNaivgationFragment fragment = (TestBottomNaivgationFragment) manager.findFragmentById(R.id.fragment);
         fragment.scrollToTop();
 
     }
 }
+
+

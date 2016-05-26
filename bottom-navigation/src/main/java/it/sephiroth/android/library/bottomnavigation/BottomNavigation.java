@@ -84,7 +84,7 @@ public class BottomNavigation extends FrameLayout implements OnItemClickListener
     /**
      * Current pending action (used inside the BottomBehavior instance)
      */
-    private int mPendingAction = PENDING_ACTION_NONE;
+    private static int mPendingAction = PENDING_ACTION_NONE;
 
     /**
      * This is the amount of space we have to cover in case there's a translucent navigation
@@ -270,13 +270,14 @@ public class BottomNavigation extends FrameLayout implements OnItemClickListener
         backgroundOverlay = new View(getContext());
         backgroundOverlay.setLayoutParams(params);
         addView(backgroundOverlay);
+        backgroundOverlay.setVisibility(View.INVISIBLE);
     }
 
-    int getPendingAction() {
+    static int getPendingAction() {
         return mPendingAction;
     }
 
-    void resetPendingAction() {
+    static void resetPendingAction() {
         mPendingAction = PENDING_ACTION_NONE;
     }
 

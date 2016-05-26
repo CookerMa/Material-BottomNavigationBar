@@ -90,7 +90,7 @@ public class MainActivityTablet extends BaseActivity implements BottomNavigation
         Log.i(TAG, "onMenuItemReselect(" + itemId + ", " + position + ")");
 
         final FragmentManager manager = getSupportFragmentManager();
-        MainActivityFragment fragment = (MainActivityFragment) manager.findFragmentById(R.id.fragment);
+        TestBottomNaivgationFragment fragment = (TestBottomNaivgationFragment) manager.findFragmentById(R.id.fragment);
         fragment.scrollToTop();
 
     }

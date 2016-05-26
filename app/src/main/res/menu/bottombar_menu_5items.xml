@@ -2,28 +2,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+
         android:id="@+id/bbn_item1"
-        android:color="@color/colorPrimary"
-        android:icon="@drawable/ic_cloud_off_white_24dp"
-        android:title="Cloud Sync" />
+        android:color="#e615001D"
+        android:icon="@drawable/tabbaricontribea"
+        android:title="Tribe" />
     <item
         android:id="@+id/bbn_item2"
-        android:color="@android:color/holo_green_dark"
-        android:icon="@drawable/ic_cast_connected_white_24dp"
-        android:title="Chromecast" />
+        android:color="#e615001D"
+        android:icon="@drawable/tabbariconsearcha"
+        android:title="Search" />
+
     <item
         android:id="@+id/bbn_item3"
-        android:color="@android:color/holo_orange_dark"
-        android:icon="@drawable/ic_mail_white_24dp"
-        android:title="Mail" />
+        android:color="#e615001D"
+        android:icon="@drawable/tabbariconvotea"
+        android:title="Vote" />
     <item
         android:id="@+id/bbn_item4"
-        android:color="#FF5252"
-        android:icon="@drawable/ic_format_list_numbered_white_24dp"
-        android:title="List" />
+        android:color="#e615001D"
+        android:icon="@drawable/tabbariconchata"
+        android:title="Chat" />
     <item
         android:id="@+id/bbn_item5"
-        android:color="#FF9800"
-        android:icon="@drawable/ic_add_circle_white_24dp"
-        android:title="Add New" />
+        android:color="#e615001D"
+        android:icon="@drawable/tabbariconprofilea"
+        android:title="Profile" />
+
 </menu>

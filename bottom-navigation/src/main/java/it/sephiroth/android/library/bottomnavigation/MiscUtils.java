@@ -202,7 +202,8 @@ public final class MiscUtils {
                 boolean cancelled;
 
                 @Override
-                public void onAnimationStart(final Animator animation) { }
+                public void onAnimationStart(final Animator animation) {
+                backgroundOverlay.setVisibility(View.INVISIBLE);}
 
                 @Override
                 public void onAnimationEnd(final Animator animation) {

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="topsnackbar-0.0.9">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.androidadvance/topsnackbar/0.0.9/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.androidadvance/topsnackbar/0.0.9/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.androidadvance/topsnackbar/0.0.9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidadvance/topsnackbar/0.0.9/564f7b1f0d3cbb26b5a47d880adbb7f0449f7de9/topsnackbar-0.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

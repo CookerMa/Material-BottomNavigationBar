@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,11 +26,11 @@ import it.sephiroth.android.library.bottomnavigation.BottomNavigation;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment {
-    private static final String TAG = MainActivityFragment.class.getSimpleName();
+public class TestBottomNaivgationFragment extends Fragment {
+    private static final String TAG = TestBottomNaivgationFragment.class.getSimpleName();
     RecyclerView mRecyclerView;
 
-    public MainActivityFragment() { }
+    public TestBottomNaivgationFragment() { }
 
     @Override
     public View onCreateView(
@@ -147,6 +148,7 @@ public class MainActivityFragment extends Fragment {
         private final Picasso picasso;
         private final int navigationHeight;
         private final Book[] data;
+        private CoordinatorLayout rootlayout;
 
         public Adapter(final Context context, final int navigationHeight, final Book[] data) {
             this.navigationHeight = navigationHeight;
@@ -161,6 +163,7 @@ public class MainActivityFragment extends Fragment {
             return holder;
         }
 
+
         @Override
         public void onBindViewHolder(final TwoLinesViewHolder holder, final int position) {
             if (position == getItemCount() - 1) {
@@ -170,10 +173,17 @@ public class MainActivityFragment extends Fragment {
             }
 
             final Book item = data[position];
+            rootlayout=(CoordinatorLayout)getActivity().findViewById(R.id.root_layout);
             holder.title.setText(item.title);
             holder.description.setText("By " + item.author);
             holder.imageView.setImageBitmap(null);
 
+            holder.imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Snackbar.make(rootlayout,"jaknvkajhdflkansvjkhaijdnvkl",Snackbar.LENGTH_LONG).show();
+                }
+            });
             picasso.cancelRequest(holder.imageView);
 
             picasso

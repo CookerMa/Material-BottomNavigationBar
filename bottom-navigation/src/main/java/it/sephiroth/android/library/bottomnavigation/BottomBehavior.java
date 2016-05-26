@@ -5,7 +5,6 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar.SnackbarLayout;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorCompat;
 import android.support.v4.view.ViewPropertyAnimatorUpdateListener;
@@ -21,6 +20,7 @@ import java.util.HashMap;
 import it.sephiroth.android.library.bottonnavigation.R;
 import proguard.annotation.Keep;
 import proguard.annotation.KeepClassMembers;
+import snackbar.MultilineSnackbar;
 
 import static android.util.Log.DEBUG;
 import static android.util.Log.ERROR;
@@ -155,7 +155,8 @@ public class BottomBehavior extends VerticalScrollingBehavior<BottomNavigation> 
             return false;
         }
 
-        return isFloatingActionButton(dependency) || SnackbarLayout.class.isInstance(dependency);
+        return isFloatingActionButton(dependency) || MultilineSnackbar.SnackbarLayout.class.isInstance(dependency);
+
     }
 
     @Override
@@ -185,7 +186,7 @@ public class BottomBehavior extends VerticalScrollingBehavior<BottomNavigation> 
 
         if (isFloatingActionButton(dependency)) {
             fabDependentView = null;
-        } else if (SnackbarLayout.class.isInstance(dependency)) {
+        } else if (MultilineSnackbar.SnackbarLayout.class.isInstance(dependency)) {
             snackbarDependentView = null;
             if (null != fabDependentView) {
                 fabDependentView.onDependentViewChanged(parent, child);
@@ -202,7 +203,7 @@ public class BottomBehavior extends VerticalScrollingBehavior<BottomNavigation> 
     @Override
     public boolean onDependentViewChanged(CoordinatorLayout parent, BottomNavigation child, View dependency) {
         boolean isFab = isFloatingActionButton(dependency);
-        boolean isSnackBack = SnackbarLayout.class.isInstance(dependency);
+        boolean isSnackBack = MultilineSnackbar.SnackbarLayout.class.isInstance(dependency);
 
         DependentView dependent;
 
@@ -213,7 +214,7 @@ public class BottomBehavior extends VerticalScrollingBehavior<BottomNavigation> 
                 dependent = new FabDependentView(dependency, height, bottomInset);
                 fabDependentView = (FabDependentView) dependent;
             } else {
-                dependent = new SnackBarDependentView((SnackbarLayout) dependency, height, bottomInset);
+                dependent = new SnackBarDependentView((MultilineSnackbar.SnackbarLayout) dependency, height, bottomInset);
                 snackbarDependentView = (SnackBarDependentView) dependent;
             }
             dependentViewHashMap.put(dependency, dependent);
@@ -410,11 +411,11 @@ public class BottomBehavior extends VerticalScrollingBehavior<BottomNavigation> 
         void onDestroy() { }
     }
 
-    private static class SnackBarDependentView extends DependentView<SnackbarLayout> {
+    private static class SnackBarDependentView extends DependentView<MultilineSnackbar.SnackbarLayout> {
         private static final String TAG = BottomBehavior.TAG + "." + SnackBarDependentView.class.getSimpleName();
         private int snackbarHeight = -1;
 
-        SnackBarDependentView(final SnackbarLayout child, final int height, final int bottomInset) {
+        SnackBarDependentView(final MultilineSnackbar.SnackbarLayout child, final int height, final int bottomInset) {
             super(child, height, bottomInset);
         }
 
@@ -462,4 +463,6 @@ public class BottomBehavior extends VerticalScrollingBehavior<BottomNavigation> 
     public interface OnExpandStatusChangeListener {
         void onExpandStatusChanged(boolean expanded, final boolean animate);
     }
+
+
 }

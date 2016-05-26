@@ -9,7 +9,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import it.sephiroth.android.library.bottomnavigation.app.MainActivity;
+import it.sephiroth.android.library.bottomnavigation.app.TestBottomNavigationActivity;
 import it.sephiroth.android.library.bottomnavigation.app.R;
 
 import static android.support.test.espresso.Espresso.onView;
@@ -26,7 +26,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 public class BasicTest {
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<TestBottomNavigationActivity> mActivityRule = new ActivityTestRule<>(TestBottomNavigationActivity.class);
 
     @Test
     public void changeSelection() {

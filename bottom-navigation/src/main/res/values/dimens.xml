@@ -2,7 +2,7 @@
 <resources>
 
     <!-- default BottomNavigation height -->
-    <dimen name="bbn_bottom_navigation_height">56dp</dimen>
+    <dimen name="bbn_bottom_navigation_height">57dp</dimen>
 
     <!-- default BottomNavigation width (for tablets) -->
     <dimen name="bbn_bottom_navigation_width">72dp</dimen>
@@ -16,8 +16,10 @@
 
     <!-- shifting item dimensions -->
     <dimen name="bbn_shifting_item_padding_bottom_active">10dp</dimen>
-    <dimen name="bbn_shifting_item_padding_bottom_inactive">16dp</dimen>
-    <dimen name="bbn_shifting_item_padding_top">6dp</dimen>
+    <!--在未选中状态下marginTop的值-->
+    <dimen name="bbn_shifting_item_padding_bottom_inactive">19dp</dimen>
+    <!--字体和icon之间的距离-->
+    <dimen name="bbn_shifting_item_padding_top">10dp</dimen>
     <dimen name="bbn_shifting_item_icon_size">24dp</dimen>
     <dimen name="bbn_shifting_text_size">14dp</dimen>
     <dimen name="bbn_shifting_item_ripple_radius">48dp</dimen>
@@ -29,11 +31,11 @@
     <!-- fixed item dimensions -->
     <dimen name="bbn_fixed_maxActiveItemWidth">168dp</dimen>
     <dimen name="bbn_fixed_minActiveItemWidth">104dp</dimen>
-    <dimen name="bbn_fixed_item_padding_top_active">6dp</dimen>
+    <dimen name="bbn_fixed_item_padding_top_active">10dp</dimen>
     <dimen name="bbn_fixed_item_padding_top_inactive">8dp</dimen>
     <dimen name="bbn_fixed_item_padding_bottom">10dp</dimen>
-    <dimen name="bbn_fixed_item_padding_horizontal">12dp</dimen>
-    <dimen name="bbn_fixed_text_size_inactive">12dp</dimen>
+    <dimen name="bbn_fixed_item_padding_horizontal">10dp</dimen>
+    <dimen name="bbn_fixed_text_size_inactive">18dp</dimen>
     <dimen name="bbn_fixed_item_icon_size">24dp</dimen>
 
     <!-- tablet -->
@@ -42,4 +44,5 @@
     <dimen name="bbn_tablet_layout_padding_top">0dp</dimen>
 
     <dimen name="bbn_badge_size">8dp</dimen>
+
 </resources>
